@@ -1,0 +1,144 @@
+.backgroundImage {
+  position: fixed;
+  z-index: -1;
+}
+
+.homeMoto {
+  color: #FFFFFF;
+  text-shadow: 5px 5px 10px #000000;
+  font-size: 150px;
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  position: absolute;
+  top: 175px;
+  left: 25%;
+}
+
+.homepageContent {
+  opacity: 0.5;
+  display: block;
+  position: absolute;
+  top: 500px;
+  padding: 400px;
+  width: 100%;
+  background-color: #3b444c;
+  box-shadow: #3b444c;
+}
+
+.footer {
+  height: 25px;
+  background-color: #3b444c;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  text-align: right;
+}
+
+.feturedProductsContainer {
+  position: absolute;
+  top: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+.productGrid {
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.fetureditem {
+  align-items: center;
+  margin: 25px;
+  width: 400px;
+  height: 250px;
+}
+
+.feturedText {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 50px;
+}
+
+.fetureditem:hover {
+  opacity: 0.5;
+}
+
+/* ScrunchyProducts */
+.feturedImage {
+  position: fixed;
+}
+
+.scrunchyText {
+  color: #FFFFFF;
+  text-shadow: 5px 5px 10px #000000;
+  font-size: 150px;
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  position: absolute;
+  top: 125px;
+  left: 30%;
+}
+
+.scrunchycontainer {
+  position: absolute;
+  top: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.scrunchygrid {
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.scrunchyitem {
+  align-items: center;
+  margin: 25px;
+  width: 400px;
+  height: 250px;
+}
+
+.scrunchyitem:hover {
+  opacity: 0.5;
+}
+
+/*aboutUs */
+.aboutcontainer {
+  width: 100%;
+  position: absolute;
+  top: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutgrid {
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutitem {
+  background-color: #000000;
+  align-items: center;
+  margin: 25px;
+  width: 80%;
+  height: 400px;
+}
+
+.inBoxText {
+  font-size: 25px;
+  color: #FFFFFF;
+  position: relative;
+  top: -250px;
+  left: 700px;
+}
