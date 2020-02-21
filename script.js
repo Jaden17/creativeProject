@@ -1,4 +1,4 @@
-alert("this is working");
+alert("Welcome to Lotusville\nLotusville is give the user access to a database of information on molecualr compounds.\ntry searching copounds by name such as \"asprin\" or \"glucose\"");
 
 document.getElementById("compoundSubmit").addEventListener("click", function(event) {
   event.preventDefault();
