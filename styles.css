@@ -1,29 +1,3 @@
-.backgroundImage {
-  position: fixed;
-  z-index: -1;
-}
-
-.homeMoto {
-  color: #FFFFFF;
-  text-shadow: 5px 5px 10px #000000;
-  font-size: 150px;
-  font-family: Brush Script MT, Brush Script Std, cursive;
-  position: absolute;
-  top: 175px;
-  left: 25%;
-}
-
-.homepageContent {
-  opacity: 0.5;
-  display: block;
-  position: absolute;
-  top: 500px;
-  padding: 400px;
-  width: 100%;
-  background-color: #3b444c;
-  box-shadow: #3b444c;
-}
-
 .footer {
   height: 25px;
   background-color: #3b444c;
@@ -34,111 +8,68 @@
   text-align: right;
 }
 
-.feturedProductsContainer {
-  position: absolute;
-  top: 600px;
-  display: flex;
-  justify-content: center;
-}
-
-.productGrid {
-  flex-wrap: wrap;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-}
-
-.fetureditem {
-  align-items: center;
-  margin: 25px;
-  width: 400px;
-  height: 250px;
-}
-
-.feturedText {
-  text-align: center;
-  color: #FFFFFF;
-  font-size: 50px;
-}
-
-.fetureditem:hover {
-  opacity: 0.5;
-}
-
-/* ScrunchyProducts */
-.feturedImage {
+#backgroundImage {
   position: fixed;
+  top: 25px;
+  width: 100%;
+  min-width: 700px;
 }
 
-.scrunchyText {
+nav {
+  z-index: -1;
+}
+
+#welcome {
   color: #FFFFFF;
-  text-shadow: 5px 5px 10px #000000;
-  font-size: 150px;
-  font-family: Brush Script MT, Brush Script Std, cursive;
   position: absolute;
-  top: 125px;
-  left: 30%;
-}
-
-.scrunchycontainer {
-  position: absolute;
-  top: 500px;
-  display: flex;
-  justify-content: center;
-}
-
-.scrunchygrid {
-  flex-wrap: wrap;
+  top: 77px;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
+  text-align: center;
+  z-index: 2;
 }
 
-.scrunchyitem {
-  align-items: center;
-  margin: 25px;
-  width: 400px;
-  height: 250px;
-}
-
-.scrunchyitem:hover {
-  opacity: 0.5;
-}
-
-/*aboutUs */
-.aboutcontainer {
+form {
+  position: fixed;
+  top: 10px;
   width: 100%;
-  position: absolute;
-  top: 150px;
-  display: flex;
-  justify-content: center;
+  text-align: right;
+  right: 80px;
+  z-index: 1031;
 }
 
-.aboutgrid {
-  flex-wrap: wrap;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+#compoundSubmit {
+  position: fixed;
+  top: 10px;
 }
 
-.aboutitem {
-  background-color: #000000;
-  align-items: center;
-  margin: 25px;
-  width: 80%;
-  height: 400px;
-}
-
-.inBoxText {
-  font-size: 25px;
-  color: #FFFFFF;
+/*After search*/
+#compoundResults {
   position: relative;
-  top: -250px;
-  left: 700px;
+  top: 60px;
+  margin: 10px;
+  padding: 25px;
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+#name {
+  font-size: 75px;
+}
+
+#compoundDescription {
+  position: relative;
+  top: 50px;
+  padding: 25px;
+  margin: 10px;
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+h2 {
+  font-size: 17px;
+}
+
+.property {
+  font-size: 25px;
+  font-weight: bolder;
 }
