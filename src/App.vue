@@ -1,32 +1,104 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+<div id="app">
+  <img src="../images/chem.jpg" id="backgroundimg">
+  <div id="menu">
+    <div id="brand">
+      <router-link to="/">
+        <h1>Lotusville</h1>
+      </router-link>
     </div>
-    <router-view/>
+    <div id="side">
+      <router-link to="/search">
+        <div class="menu-item search" id="search">
+          <img src="../images/info.png" id="infoimg" class="linked">
+          <p class="searchText" id="info">Find SDS Info</p>
+        </div>
+      </router-link>
+      <router-link to="/browse">
+        <div class="menu-item browse">
+          <img src="../images/search.png" id="browseimg" class ="linked">
+          <p class="searchText" id="browse">Search Stockroom</p>
+        </div>
+      </router-link>
+      <router-link to="/cart">
+        <div class="menu-item" id="cart">
+          <img src="../images/requestForm.png" id="requestimg" class ="linked">
+          <p class="searchText" id="request">Request Form</p>
+        </div>
+      </router-link>
+    </div>
   </div>
+  <router-view />
+</div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<style scoped>
+  * {
+    z-index: 50;
+  }
 
-#nav {
-  padding: 30px;
-}
+  .linked {
+    width: 25px;
+  }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  #backgroundimg {
+  z-index: -2;
+  position: fixed;
+  top: 25px;
+  width: 100%;
+  min-width: 700px;
+  }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+  #menu {
+    position: fixed;
+    top:0px;
+    width: 100%;
+    background-color: #3b444c;
+    height: 65px;
+  }
+
+  #brand {
+    position: relative;
+    left: 10px;
+    top: -10px;
+  }
+
+  h1 {
+  color: #FFFFFF;
+  }
+
+  #side {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  top: -60px;
+  }
+
+  .menu-item {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 30px;
+  }
+
+  .searchText {
+    color: #FFFFFF;
+    width: 150px;
+    position: relative;
+    top: -20px;
+    right: 60px;
+    opacity: 0;
+  }
+
+  #infoimg:hover + #info {
+    opacity: 1;
+  }
+
+  #browseimg:hover + #browse {
+    opacity: 1;
+  }
+
+  #requestimg:hover + #request {
+    opacity: 1;
+  }
 </style>
