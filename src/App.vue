@@ -29,10 +29,22 @@
     </div>
   </div>
   <router-view />
+  <div id="footer">
+    <a class='gitLink' href="https://github.com/Jaden17/creativeProject">https://github.com/Jaden17/creativeProject |</a>
+  </div>
 </div>
 </template>
 
 <style scoped>
+  #footer {
+    position: fixed;
+    bottom: 0px;
+    height: 25px;
+    background-color: #3b444c;
+    right: 0px;
+    left: 0px;
+    text-align: right;
+    }
   * {
     z-index: 50;
   }

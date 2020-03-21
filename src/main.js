@@ -8,7 +8,6 @@ Vue.config.productionTip = false
 let data = {
   products: mock,
   cart: [],
-  requests: []
 }
 
 new Vue({
